@@ -3,7 +3,8 @@ Panels:
     Help Height: 84
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /TF1
       Splitter Ratio: 0.7425600290298462
     Tree Height: 273
   - Class: rviz/Help
@@ -216,6 +217,50 @@ Visualization Manager:
         Show Robot Visual: true
       Value: true
       Velocity_Scaling_Factor: 1
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        iiwa_link_0:
+          Value: true
+        iiwa_link_1:
+          Value: true
+        iiwa_link_2:
+          Value: true
+        iiwa_link_3:
+          Value: true
+        iiwa_link_4:
+          Value: true
+        iiwa_link_5:
+          Value: true
+        iiwa_link_6:
+          Value: true
+        iiwa_link_7:
+          Value: true
+        iiwa_link_ee:
+          Value: true
+        world:
+          Value: true
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          iiwa_link_0:
+            iiwa_link_1:
+              iiwa_link_2:
+                iiwa_link_3:
+                  iiwa_link_4:
+                    iiwa_link_5:
+                      iiwa_link_6:
+                        iiwa_link_7:
+                          iiwa_link_ee:
+                            {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -248,15 +293,15 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4897969365119934
+      Pitch: 0.3747970461845398
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 0.231777623295784
+      Yaw: 5.744956970214844
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: true
-  Height: 1025
+  Height: 1052
   Help:
     collapsed: false
   Hide Left Dock: true
@@ -265,9 +310,9 @@ Window Geometry:
     collapsed: true
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003a7fc0200000007fb000000100044006900730070006c006100790073000000003d000001a2000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a005600690065007700730000000193000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002db0000017a0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004100fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001e5000001ff0000019b00ffffff0000039f000003a700000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003c2fc0200000007fb000000100044006900730070006c006100790073000000003d000001a2000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a005600690065007700730000000193000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002db0000017a0000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004100fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001e50000021a0000019b00ffffff0000039f000003c200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 927
   X: 993
-  Y: 27
+  Y: 0

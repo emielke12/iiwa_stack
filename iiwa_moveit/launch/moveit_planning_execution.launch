@@ -11,8 +11,8 @@
     <arg name="hardware_interface" default="PositionJointInterface" />
 
     <group ns="$(arg robot_name)">
-      <!-- <remap from="/tf" to="tf" /> -->
-      <!-- <remap from="/tf_static" to="tf_static" /> -->
+      <remap from="/tf" to="tf" />
+      <remap from="/tf_static" to="tf_static" />
       
       <rosparam command="load" file="$(find iiwa_moveit)/config/joint_names.yaml" />
       
@@ -45,6 +45,9 @@
         </include>
         
       </group>
+
+      <!-- Start robot state -->
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
       
       <!-- Load move_group -->
       <include file="$(find iiwa_moveit)/launch/move_group.launch">
